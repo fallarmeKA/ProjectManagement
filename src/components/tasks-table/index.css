@@ -1,0 +1,44 @@
+.tasks-table-container {
+  overflow-x: auto;
+}
+
+.tasks-table-container table {
+  width: 100%;
+  min-width: 500px;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.tasks-table-container table thead {
+  border: none;
+  border-bottom: 1px solid black;
+}
+
+.tasks-table-container table thead th {
+  font-weight: 500;
+}
+
+.tasks-table-container table thead th:not(:last-child) {
+  width: 21.25%;
+}
+
+.tasks-table-container table thead th:last-child {
+  width: 15%;
+}
+
+.tasks-table-container table tbody tr {
+  vertical-align: top;
+}
+
+.tasks-table-container table tbody tr:nth-child(2n + 0) {
+  background-color: #0000000d;
+}
+
+.tasks-table-container table tbody tr span.allow-edit {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.tasks-table-container table td {
+  padding: 0.25rem 0.5rem 0.25rem 0;
+}

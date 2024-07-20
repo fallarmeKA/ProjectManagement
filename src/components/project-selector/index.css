@@ -1,0 +1,21 @@
+.project-selector {
+  background-color: var(--slate-200);
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+
+  display: flex;
+  flex-flow: row wrap;
+  column-gap: 1rem;
+  row-gap: 0.25rem;
+
+  width: 100%;
+}
+
+.project-selector label {
+  font-weight: 500;
+}
+
+.project-selector select {
+  border: none;
+  border-radius: 0.25rem;
+}

@@ -1,0 +1,103 @@
+.general-layout aside {
+  background-color: var(--primary);
+  color: white;
+
+  display: flex;
+  flex-flow: column nowrap;
+
+  transition: 0.3s;
+}
+
+.general-layout nav {
+  flex-grow: 1;
+
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: stretch;
+  justify-content: center;
+  row-gap: -0.5rem;
+}
+
+.general-layout aside .nav-item {
+  padding: 1rem;
+  background-color: transparent;
+  color: white;
+
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+
+  transition: 0.3s ease-in-out;
+  border: none;
+  text-decoration: none;
+}
+
+.general-layout aside .nav-item.title {
+  font-weight: bold;
+  text-align: center;
+
+  overflow: hidden;
+  max-width: 0;
+  opacity: 0;
+}
+
+.general-layout aside .nav-item:not(.no-pointer) {
+  cursor: pointer;
+}
+
+.general-layout aside .nav-item:hover {
+  background-color: white;
+  color: var(--primary);
+}
+
+.general-layout aside .nav-item .text {
+  white-space: nowrap;
+
+  margin-left: 0;
+  max-width: 0;
+  overflow: clip;
+
+  transition: max-width 0.3s ease-in-out, margin-left 0.3s ease-in-out;
+  text-overflow: ellipsis;
+
+  line-clamp: 1;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+}
+
+.general-layout aside:hover .nav-item .text {
+  margin-left: 1rem;
+  max-width: 80px;
+}
+
+@media screen and (min-width: 576px) {
+  .general-layout aside .nav-item {
+    padding: 1rem 1.5rem;
+  }
+
+  .general-layout aside .nav-item .text {
+    margin-left: 1rem;
+    max-width: 80px;
+  }
+
+  .general-layout aside .nav-item.title {
+    max-width: unset;
+    opacity: 1;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .general-layout aside .nav-item {
+    padding: 1rem 2rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+}
+
+@media screen and (min-width: 1200px) {
+  .general-layout aside .nav-item {
+    padding: 1rem 3rem;
+  }
+}

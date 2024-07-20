@@ -1,0 +1,25 @@
+.general-layout {
+  height: 100vh;
+
+  display: grid;
+  grid-template-columns: max-content 1fr;
+}
+
+.general-layout .content {
+  height: 100vh;
+  padding: 2rem;
+}
+
+.general-layout .content.fullscreen {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-start;
+
+  overflow-y: clip;
+
+  min-width: 0;
+}
+
+.general-layout .content:not(.fullscreen) {
+  overflow-y: auto;
+}

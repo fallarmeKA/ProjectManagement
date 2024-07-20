@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: inherit;
+  font-size: inherit;
+}
+
+body {
+  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", Segoe UI Symbol, "Noto Color Emoji";
+}
+
+:root {
+  --primary: #0651cc;
+  --primary-opacity75: #0651ccbf;
+  --slate-200: rgb(226 232 240);
+  --slate-200-opacity75: rgb(226 232 240 / 0.75);
+}
+
+input[type="color"]::-webkit-color-swatch {
+  border: none;
+  border-radius: 2px;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.button.add {
+  background-color: var(--primary);
+  border: none;
+  border-radius: 0.25rem;
+  padding: 0.25rem 1rem 0.25rem 0.5rem;
+
+  display: flex;
+  flex-flow: row nowrap;
+  column-gap: 0.25rem;
+  align-items: center;
+
+  color: white;
+  font-weight: 500;
+  transition: 0.3s;
+
+  cursor: pointer;
+}
+
+.button.add:hover {
+  background-color: var(--primary-opacity75);
+}
+
+.button.edit {
+  padding: 0.25rem 1rem;
+  border: none;
+  border-radius: 0.25rem;
+
+  transition: 0.3s;
+
+  cursor: pointer;
+}

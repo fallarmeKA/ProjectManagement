@@ -1,0 +1,41 @@
+/projects
+  /project
+    id: string
+    ---
+    userID: string (FK /user)
+    ---
+    created: datetime
+    end: datetime
+    start: datetime
+    ---
+    color: string
+    description: string
+    name: string
+    status: "incomplete" | "in progress" | "complete"
+
+/tasks
+  /task
+    id: string
+    ---
+    userID: string (FK /user)
+    projectID: string (FK /user)
+    ---
+    created: datetime
+    end: datetime
+    start: datetime
+    ---
+    color: string
+    description: string
+    name: string
+    status: "incomplete" | "in progress" | "complete"
+
+/users
+  /user
+    id: string
+    ---
+    created: date
+    ---
+    email: string
+    name: string
+    role: "admin" | "employee"
+    username: string
